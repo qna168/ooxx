@@ -6,6 +6,10 @@
 
 開啟 `index.html` 即可開始遊玩。
 
+## GitHub 流程練習
+
+這個分支用來示範 Pull Request：先在分支修改，推上 GitHub，確認後再合併回 `main`。
+
 ## 檔案
 
 - `index.html`：頁面結構
