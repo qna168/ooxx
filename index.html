@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圈叉遊戲</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app" aria-labelledby="game-title">
+      <section class="game-panel">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Tic Tac Toe</p>
+            <h1 id="game-title">圈叉遊戲</h1>
+          </div>
+          <button class="icon-button" id="reset-score" type="button" aria-label="重設比分" title="重設比分">
+            ↺
+          </button>
+        </div>
+
+        <div class="scoreboard" aria-label="比分">
+          <div class="score-card">
+            <span>玩家 O</span>
+            <strong id="score-o">0</strong>
+          </div>
+          <div class="score-card">
+            <span>平手</span>
+            <strong id="score-draw">0</strong>
+          </div>
+          <div class="score-card">
+            <span>玩家 X</span>
+            <strong id="score-x">0</strong>
+          </div>
+        </div>
+
+        <div class="status-row">
+          <p id="status" aria-live="polite">輪到玩家 O</p>
+          <button id="new-round" type="button">新一局</button>
+        </div>
+
+        <div class="board" id="board" role="grid" aria-label="圈叉遊戲棋盤">
+          <button class="cell" type="button" role="gridcell" aria-label="第 1 格"></button>
+          <button class="cell" type="button" role="gridcell" aria-label="第 2 格"></button>
+          <button class="cell" type="button" role="gridcell" aria-label="第 3 格"></button>
+          <button class="cell" type="button" role="gridcell" aria-label="第 4 格"></button>
+          <button class="cell" type="button" role="gridcell" aria-label="第 5 格"></button>
+          <button class="cell" type="button" role="gridcell" aria-label="第 6 格"></button>
+          <button class="cell" type="button" role="gridcell" aria-label="第 7 格"></button>
+          <button class="cell" type="button" role="gridcell" aria-label="第 8 格"></button>
+          <button class="cell" type="button" role="gridcell" aria-label="第 9 格"></button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
